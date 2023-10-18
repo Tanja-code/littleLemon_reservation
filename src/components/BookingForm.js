@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-
+import booking_img from"../images/restauranfood.jpg";
 
 
 const BookingForm = (props) => {
@@ -25,6 +25,7 @@ const BookingForm = (props) => {
       <section>
         <form onSubmit={handleSumbit}>
           <fieldset className="formField">
+            
             <div>
               <label htmlFor="book-date">Choose Date:</label>
               <input id="book-date" value={date} onChange={(e) => handleChange(e.target.value)} type="date" required/>
@@ -43,7 +44,7 @@ const BookingForm = (props) => {
             <div>
               <label htmlFor="book-occasion">Occasion:</label>
               <select id="book-occasion" key={occasion} value={occasion} onChange={(e) => setOccasion(e.target.value)} required>
-                <option value="">Select an Option</option>
+                <option value="">Please Select</option>
                 <option>Birthday</option>
                 <option>Anniversary</option>
               </select>
@@ -53,7 +54,13 @@ const BookingForm = (props) => {
             </div>
           </fieldset>
         </form>
+
+        <div className="booking-img">
+        <img id="image-booking-page"src={booking_img} alt=""/>
+      </div>
+          
       </section>
+      
     </header>
   );
 };

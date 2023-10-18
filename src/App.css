@@ -90,6 +90,9 @@ padding: 10px 13%;
 position: relative;
 }
 
+h1{
+  color:#495e57;
+}
 
 h2 {
   color: #F4CE14;
@@ -125,6 +128,22 @@ button {
   top: 2px;
   width: 400px;
 }
+
+#image-booking-page{
+  position: absolute;
+
+  margin-right: 20px;
+  margin-bottom: 20px;
+
+  width: 250px;
+  height: 300px;
+  top:150px;
+  right:13%;
+
+  border-radius: 20px;
+
+}
+
 
 .banner-img img {
   width: 100%;
